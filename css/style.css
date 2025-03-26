@@ -28,6 +28,7 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -45,26 +46,64 @@ html {
 
 body {
     text-align: center;
-    font-family: "SpoqaHanSansNeo-Regular";
+    font-family: "GmarketSansMedium";
     background-color: rgba(91, 35, 134, 1);
     color: white;
 }
 .wrap {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 80px;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
     position: relative;
-    width: 100%;
-    margin-bottom: 300px;
+    text-align: center;
+    align-items: center; 
+    margin-top: 273px;
+    margin-bottom: 125px;
 }
 
 header img {
     position: absolute;
-    transform: translate(0, 50%);
+    width: 564px;
+    height: 112px;
+    transform: translate(-50%, -50%); 
+}
+
+header img:last-child{
+    width: 261px;
+    height: 265px;
+}
+
+.section-text1 {
+    width: 493px;
+    height: 227px;
+    margin: 0 auto;
+    padding-top: 46px;
+
+}
+
+.section-text1 h2 {
+    font-size: 1.5rem;
+    font-family:"OTEnjoystoriesBA";
+    color: rgba(245, 223, 77, 1);
+    padding-bottom: 78px;
+    
+}
+
+.section-text1 p {
+    font-weight: bold;
+    line-height: 28px;
+    background-image: 493px 96px;
+    background: url("../src/quotes.png") no-repeat center;
+}
+
+.section-text1 span {
+    font-size: 0.75rem;
+    font-weight: lighter;
+}
+
+.tex-input {
+    width: 765px;
+    height: 141px;
 }
