@@ -67,12 +67,13 @@ header img {
     position: absolute;
     width: 564px;
     height: 112px;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 }
 
 header img:last-child{
     width: 261px;
     height: 265px;
+    z-index: -1; 
 }
 
 .section-text1 {
@@ -80,7 +81,6 @@ header img:last-child{
     height: 227px;
     margin: 0 auto;
     padding-top: 46px;
-
 }
 
 .section-text1 h2 {
@@ -103,7 +103,23 @@ header img:last-child{
     font-weight: lighter;
 }
 
-.tex-input {
-    width: 765px;
-    height: 141px;
+.section-text2 {
+    margin-top:102px ;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.input {
+    font-size: 1rem;
+    border-radius: 7px;
+    border: none;
+    width: 228px;
+    height: 57px;
+    text-align: center;
+    margin: 0px 17px;
+}
+.input::placeholder {
+    color: rgba(186, 188, 190, 0.5);
+    font-family:"GmarketSansMedium";  
 }
