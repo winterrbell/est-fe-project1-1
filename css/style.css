@@ -24,8 +24,8 @@
     font-style: normal;
     font-weight: 400;
     src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
-    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
-    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+         url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+         url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
 
@@ -40,27 +40,36 @@
     white-space: nowrap;
     border: 0;
 }
+
+:root {
+    --main-color: rgba(91, 35, 134, 1);
+    --sub-color: rgba(252, 238, 33, 1);
+    --font-family: "GmarketSansMedium", sans-serif;
+}
+
 html {
-    font-size: 24px;
+    font-size: 12px;
 }
 
 body {
     text-align: center;
-    font-family: "GmarketSansMedium";
-    background-color: rgba(91, 35, 134, 1);
+    font-family: var(--font-family);
+    background-color: var(--main-color);
     color: white;
 }
+
 .wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;    
 }
 
 header {
     position: relative;
     text-align: center;
-    align-items: center; 
-    margin-top: 273px;
-    margin-bottom: 125px;
+    align-items: center;
+    margin: 273px 0 125px;
 }
 
 header img {
@@ -70,56 +79,165 @@ header img {
     transform: translate(-50%, -50%);
 }
 
-header img:last-child{
+header img:last-child {
     width: 261px;
     height: 265px;
-    z-index: -1; 
+    z-index: -1;
 }
 
-.section-text1 {
-    width: 493px;
-    height: 227px;
-    margin: 0 auto;
-    padding-top: 46px;
+.content-slogn {
+    margin: 46px 0 0;
 }
 
-.section-text1 h2 {
-    font-size: 1.5rem;
-    font-family:"OTEnjoystoriesBA";
-    color: rgba(245, 223, 77, 1);
-    padding-bottom: 78px;
-    
+.content-slogn h2 {
+    font-size: 3rem;
+    font-family: "OTEnjoystoriesBA";
+    color: var(--sub-color);
 }
 
-.section-text1 p {
-    font-weight: bold;
+.content-slogn p {
+    font-size: 2rem;
+    margin: 78px 0 0;
+    font-weight: bolder;
     line-height: 28px;
-    background-image: 493px 96px;
     background: url("../src/quotes.png") no-repeat center;
 }
 
-.section-text1 span {
-    font-size: 0.75rem;
+.content-slogn span {
+    font-size: 1.5rem;
     font-weight: lighter;
 }
 
-.section-text2 {
-    margin-top:102px ;
+.content-top {
+    font-size:2rem;
+    margin: 102px 0 0;
     display: flex;
     flex-direction: column;
     gap: 27px;
 }
 
 .input {
-    font-size: 1rem;
     border-radius: 7px;
     border: none;
     width: 228px;
     height: 57px;
-    text-align: center;
-    margin: 0px 17px;
+    padding: 0 12px;
+    margin: 0 17px;
 }
+
 .input::placeholder {
+    font-size: 2rem;
+    text-align: center;
     color: rgba(186, 188, 190, 0.5);
-    font-family:"GmarketSansMedium";  
+    font-family: var(--font-family);
+}
+
+.content-banner {
+    margin: 115px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 2rem;
+    font-family: "GmarketSansbold";
+    padding: 21px 49px;
+    border-radius: 56px;
+    border: none;
+    color: var(--main-color);
+    background-color: var(--sub-color);
+}
+
+#share {
+    background-color: white;
+}
+
+.content-banner img {
+    transform: translate(7px, 14px);
+}
+
+.content-sub {
+    font-size: 2rem;
+    margin: 147px 0;
+    line-height: 60px;
+}
+
+.content-sub span {
+    font-size: 6rem;
+    padding: 0 12px;
+}
+
+.content-link {
+    margin-top: 127px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+
+
+footer {
+    margin: 130px 0 73px;
+    font-size: 1rem;
+    font-family: "Noto Sans KR";
+    line-height: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+/* 모바일 */
+@media (max-width: 394px) {
+    html {
+        font-size: 10px;
+    }
+
+    header {
+        margin: 96px 0 69px;
+    }
+    
+    header img {
+        width: 267px;
+        height: 53px;
+    }
+    
+    header img:last-child {
+        width: 125px;
+        height: 126px;
+    }
+    
+    .content-slogn {
+        margin: 31px 0 0;
+    }
+    
+    .content-slogn h2 {
+        font-size: 2.2rem;
+    }
+    
+    .content-slogn p {
+        font-size: 1.4rem;
+        margin: 62px 0 0;
+        line-height: 1.7rem;
+        background-size:contain;
+    }
+    
+    .content-slogn span {
+        font-size: 1.2rem;
+    }
+    
+    .content-top {
+        font-size: 1.4rem;
+        margin: 62px 0 0;
+        gap: 20px;
+    }
+    
+    .input {
+        width: 180px;
+        height: 45px;
+        margin: 0 10px;
+    }
+    
+
 }
