@@ -312,11 +312,12 @@ footer {
 #myDialog {
     font-family: "OTEnjoystoriesBA", sans-serif;
     color: var(--main-color);
-    width: 947px;
-    height: 951px;
+    width: 800px;
+    height: 800px;
     border: 1px solid rgba(186, 188, 190, 0.5);
     border-radius:30px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
 #myDialog section {
@@ -328,7 +329,7 @@ footer {
 
 #myDialog h2 {
     font-size: 9.6rem;
-    margin-top: 133px;
+    margin-top: 76px;
 }
 
 #myDialog p  {
