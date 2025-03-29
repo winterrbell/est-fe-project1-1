@@ -48,7 +48,7 @@
 }
 
 html {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 body {
@@ -69,7 +69,7 @@ header {
     position: relative;
     text-align: center;
     align-items: center;
-    margin: 273px 0 125px;
+    margin: 273px auto 125px;
 }
 
 header img {
@@ -86,34 +86,42 @@ header img:last-child {
 }
 
 .content-slogn {
-    margin: 46px 0 0;
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+    gap: 78px;
 }
 
 .content-slogn h2 {
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-family: "OTEnjoystoriesBA";
     color: var(--sub-color);
 }
 
 .content-slogn p {
-    font-size: 2rem;
-    margin: 78px 0 0;
+    font-size: 2.4rem;
     font-weight: bolder;
     line-height: 28px;
     background: url("../src/quotes.png") no-repeat center;
 }
 
 .content-slogn span {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: lighter;
 }
 
 .content-top {
-    font-size:2rem;
-    margin: 102px 0 0;
+    font-size:2.4rem;
+    margin-top: 102px;
     display: flex;
     flex-direction: column;
     gap: 27px;
+}
+
+.trainning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .input {
@@ -121,32 +129,33 @@ header img:last-child {
     border: none;
     width: 228px;
     height: 57px;
-    padding: 0 12px;
+    padding: 0;
     margin: 0 17px;
 }
 
 .input::placeholder {
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
     color: rgba(186, 188, 190, 0.5);
     font-family: var(--font-family);
 }
 
 .content-banner {
-    margin: 115px 0 0;
+    margin-top: 115px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 button {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-family: "GmarketSansbold";
     padding: 21px 49px;
     border-radius: 56px;
     border: none;
     color: var(--main-color);
     background-color: var(--sub-color);
+    cursor: pointer;
 }
 
 #share {
@@ -158,13 +167,13 @@ button {
 }
 
 .content-sub {
-    font-size: 2rem;
-    margin: 147px 0;
+    font-size: 2.4rem;
+    margin-top: 147px;
     line-height: 60px;
 }
 
 .content-sub span {
-    font-size: 6rem;
+    font-size: 7.2rem;
     padding: 0 12px;
 }
 
@@ -175,11 +184,9 @@ button {
     gap: 18px;
 }
 
-
-
 footer {
-    margin: 130px 0 73px;
-    font-size: 1rem;
+    margin: 130px auto 73px;
+    font-size: 1.2rem;
     font-family: "Noto Sans KR";
     line-height: 14px;
     display: flex;
@@ -190,12 +197,9 @@ footer {
 
 /* 모바일 */
 @media (max-width: 394px) {
-    html {
-        font-size: 10px;
-    }
 
     header {
-        margin: 96px 0 69px;
+        margin: 96px auto 69px;
     }
     
     header img {
@@ -209,35 +213,193 @@ footer {
     }
     
     .content-slogn {
-        margin: 31px 0 0;
+        margin-top: 31px;
+        display: flex;
+        flex-direction: column;
+        gap: 62px;
     }
     
     .content-slogn h2 {
         font-size: 2.2rem;
     }
     
-    .content-slogn p {
+    .content-slogn p{
         font-size: 1.4rem;
-        margin: 62px 0 0;
         line-height: 1.7rem;
-        background-size:contain;
+        background-size:90%;
     }
     
+    
     .content-slogn span {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     
     .content-top {
         font-size: 1.4rem;
         margin: 62px 0 0;
-        gap: 20px;
+    }
+
+    .trainning {
+        flex-direction: column;
+        gap: 19px;
+    }
+
+    .input {
+        width: 156px;
+        height: 37px;
+        margin: 0 4px;
+    }
+
+    .input::placeholder {
+        font-size: 1.4rem;
+    }
+
+    
+    .content-banner {
+        margin-top: 49px;
     }
     
-    .input {
-        width: 180px;
-        height: 45px;
-        margin: 0 10px;
+    .content-banner button {
+        width: 241px;
+        height: 68px;
+        font-size: 1.4rem;
+        border-radius: 13px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-banner img {
+        width: 43px;
+        height: 48px;
+    }
+    
+    .content-sub {
+        font-size: 1.4rem;
+        margin-top: 64px;
+        line-height: 2.5rem;
+    }
+    
+    .content-sub span {
+        font-size: 2.4rem;
+        padding: 0 8px;
+    }
+    
+    .content-link {
+        margin-top: 55px;
+        gap: 13px;
+    }
+    .content-link button {
+        font-size: 1.4rem;
+        padding: 13.5px 17.5px 12.5px;
+    }
+    
+    footer {
+        margin: 83px auto 31px;
+        font-size: 0.9rem;
+        gap: 19px;
+    }
+
+    footer img {
+        width: 91px ;
+        height: 18px;
     }
     
 
+}
+
+/* 팝업창 */
+#myDialog {
+    font-family: "OTEnjoystoriesBA", sans-serif;
+    color: var(--main-color);
+    width: 947px;
+    height: 951px;
+    border: 1px solid rgba(186, 188, 190, 0.5);
+    border-radius:30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+#myDialog section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#myDialog h2 {
+    font-size: 9.6rem;
+    margin-top: 133px;
+}
+
+#myDialog p  {
+    font-size: 3.6rem;
+    margin-top: 4px;
+} 
+
+
+#myDialog img {
+    margin:29px 0 0 ;
+}
+
+#myDialog button {
+    margin: 74px 0 0;
+    font-family: "GmarketSansBold", sans-serif;
+    font-size: 2.4rem;
+    padding: 21px 49px;
+    border-radius: 56px;
+    border: none;
+    background-color: var(--sub-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 모바일 팝업창 */
+@media (max-width: 800px) {
+    #myDialog {
+        width: 330px;
+        height: 500px;
+        /* margin: 20px; */
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    #myDialog section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myDialog span {
+        display: none;
+    }
+
+    #myDialog h2 {
+        font-size: 6.4rem;
+        
+        margin-top: 40px;
+    }
+    
+    #myDialog p {
+        font-size: 3.6rem;
+        margin-top: -4px;
+    }
+
+    
+    #myDialog img {
+        width: 241px;
+        height: 188px;
+    }
+
+    
+    #myDialog button {
+        width: 241px;
+        height: 68px;
+        font-size: 1.4rem;
+        border-radius: 13px;
+        margin-top: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
